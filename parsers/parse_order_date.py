@@ -1,28 +1,14 @@
 import os
 from datetime import datetime
-import logging
 import pandas as pd
+from logger_file.logger import get_logger
 
 # 1. Isolated Quarantine Directory Configuration
 QUARANTINE_DIR = os.path.join("quarantine", "quarantine_date")
 ist_offset = pd.Timedelta(hours=5, minutes=30)
 
-# 2. Isolated Logger Setup Configuration for this specific file
-def _setup_isolated_logger():
-    log_dir = "logger_file"
-    os.makedirs(log_dir, exist_ok=True)
-    log_filepath = os.path.join(log_dir, "parse_order_date.log")
-    
-    file_logger = logging.getLogger("parse_order_date")
-    file_logger.setLevel(logging.INFO)
-    
-    if not file_logger.handlers:
-        handler = logging.FileHandler(log_filepath)
-        handler.setFormatter(logging.Formatter('%(asctime)s - %(levelname)s - %(message)s'))
-        file_logger.addHandler(handler)
-    return file_logger
-
-logger = _setup_isolated_logger()
+# 2. Initialize the file-specific isolated logger
+logger = get_logger("parse_order_date")
 logger.info("Order Date parser execution process initiated.")
 
 def _parse_order_date(val):
