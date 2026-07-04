@@ -1,0 +1,6 @@
+2026-07-04 19:38:36,014 - INFO - Phone parser execution process initiated.
+2026-07-04 19:42:29,887 - INFO - Phone parser execution process initiated.
+2026-07-04 19:45:13,361 - INFO - Phone parser execution process initiated.
+2026-07-04 19:45:18,380 - WARNING - status = success | total_rows = 1063 | cleaned_rows = 899 | quarantine_rows = 164 | quarantine_path = quarantine\quarantine_phone\quarantine_phone_04-07-26.csv
+2026-07-04 19:47:43,476 - INFO - Phone parser execution process initiated.
+2026-07-04 19:47:47,224 - WARNING - status = success | total_rows = 1063 | cleaned_rows = 899 | quarantine_rows = 164 | quarantine_path = quarantine\quarantine_phone\quarantine_phone_04-07-26.csv

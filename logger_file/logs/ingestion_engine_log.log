@@ -1,0 +1,12 @@
+2026-07-04 19:38:44,850 | INFO | ingestion_engine | action=discover_files | files_found=0
+2026-07-04 19:42:33,183 | INFO | ingestion_engine | --- Launching Ingestion Lifecycle Loop for file: dirty_dataset.csv ---
+2026-07-04 19:42:33,211 | ERROR | ingestion_engine | validation=failed | status=quarantine | reason=extra_columns | expected=15 | found=16 | extra=['status', 'discount_pct']
+2026-07-04 19:42:33,212 | ERROR | ingestion_engine | File structural validation rejected: dirty_dataset.csv. Reason: more_columns
+2026-07-04 19:45:16,885 | INFO | ingestion_engine | action=discover_files | files_found=1
+2026-07-04 19:45:16,888 | INFO | ingestion_engine | --- Launching Ingestion Lifecycle Loop for file: dirty_dataset.csv ---
+2026-07-04 19:45:16,942 | WARNING | ingestion_engine | Extra columns detected: ['discount_pct', 'status']. Truncating dataset down to expected core layout schema.
+2026-07-04 19:45:18,271 | INFO | ingestion_engine | Successfully archived raw dump records to raw_bronze.orders_landing for file: dirty_dataset.csv
+2026-07-04 19:47:46,899 | INFO | ingestion_engine | action=discover_files | files_found=1
+2026-07-04 19:47:46,902 | INFO | ingestion_engine | --- Launching Ingestion Lifecycle Loop for file: dirty_dataset.csv ---
+2026-07-04 19:47:46,933 | WARNING | ingestion_engine | Extra columns detected: ['status']. Truncating dataset down to expected core layout schema.
+2026-07-04 19:47:47,144 | INFO | ingestion_engine | Successfully archived raw dump records to raw_bronze.orders_landing for file: dirty_dataset.csv

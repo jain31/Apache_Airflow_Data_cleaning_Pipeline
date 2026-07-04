@@ -1,0 +1,6 @@
+2026-07-04 19:38:36,078 - INFO - State parser execution process initiated.
+2026-07-04 19:42:29,902 - INFO - State parser execution process initiated.
+2026-07-04 19:45:13,377 - INFO - State parser execution process initiated.
+2026-07-04 19:45:18,447 - WARNING - status = success | total_rows = 529 | cleaned_rows = 381 | quarantine_rows = 148 | quarantine_path = quarantine\quarantine_state\quarantine_state_04-07-26.csv
+2026-07-04 19:47:43,489 - INFO - State parser execution process initiated.
+2026-07-04 19:47:47,282 - WARNING - status = success | total_rows = 529 | cleaned_rows = 381 | quarantine_rows = 148 | quarantine_path = quarantine\quarantine_state\quarantine_state_04-07-26.csv

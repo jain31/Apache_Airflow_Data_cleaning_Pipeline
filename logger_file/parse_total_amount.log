@@ -1,0 +1,6 @@
+2026-07-04 19:38:36,090 - INFO - Total Amount parser execution process initiated.
+2026-07-04 19:42:29,905 - INFO - Total Amount parser execution process initiated.
+2026-07-04 19:45:13,379 - INFO - Total Amount parser execution process initiated.
+2026-07-04 19:45:18,460 - WARNING - status = success | total_rows = 381 | cleaned_rows = 342 | quarantine_rows = 39 | quarantine_path = quarantine\quarantine_total_amount\quarantine_total_amount_04-07-26.csv
+2026-07-04 19:47:43,492 - INFO - Total Amount parser execution process initiated.
+2026-07-04 19:47:47,296 - WARNING - status = success | total_rows = 381 | cleaned_rows = 342 | quarantine_rows = 39 | quarantine_path = quarantine\quarantine_total_amount\quarantine_total_amount_04-07-26.csv

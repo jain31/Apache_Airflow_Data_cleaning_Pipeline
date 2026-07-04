@@ -1,0 +1,88 @@
+,discount,unit_price,quantity,order_date,total_amount,customer_id,product_name,pincode,rating,order_id,city,category,payment_method,phone,state
+21,,45,114.0,2023-04-29,225.00,CUST_0577,Notebook,115881 ,6,ord_0022, Jaipur ,STATIONERY,wallet,96613 31719,Rajasthan
+24,20,$199.00,175,27-05-2023,1711228.86,CUST_???,Phone Holder,488454 ,Good,ORD_0024,"Hyderabad,",Acce,Credit Card,97106 03567,Telangana
+39,26,450..,12,1699554600,-450.00,CUST_???,Wireless Mouse,000000,5 stars,ord_0037,  Chennai,  Electronics  , Debit Card,9698946155,T@mil N@du
+42,14.2,8500.00,292,"Apr 09, 2024",17850.00,#REF!,Monitor,603937,Good,ORD_0040,JAIPUR,electronics,,919027259878,R@j@sth@n
+56,-5,9800..,-1,"Feb 06, 2024","$76,432,356.00",CUST_0594,Standing Desk,918261,5 stars,ORD_0054,delhi,Furn,,+91 93343 06874,Delhi
+86,21.4,Rs. 199.00,-2,25/09/2024,690.37,CUST_0525,Phone Holder,22177,6,ORD_0083, Chennai ,Accessories,CREDIT CARD,99017 17776,Tamil Nadu
+97,150,450#,9999,1685385000,3959604.00,CUST_,Wireless Mouse,469543,5 stars,ORD_0094 , Delhi ,Electronics, Credit Card,+91-96219-32521,Delhi
+116,25.8,Rs. 9800.00,16,03-10-2023,34692.00,,Standing Desk,000000,6,ORD_0111, Bangalore ,Furn,Net Banking,919623233015,K@rn@t@k@
+135,,199.0,20,2024-04-05,924.36,,Phone Holder,366298 ,Good,ORD_0127,  Delhi,  Accessories  ,,+91-90306-78755,  Delhi
+142,,199.0,20,2024-04-05,924.36,,Phone Holder,366298 ,Good,ORD_0127,  Delhi_dup,  Accessories  ,,+91-90306-78755,  Delhi
+149,-5,25,0,1696789800,Rs.249975,CUST_0446,Sticky Notes,000000,6,ORD_0138,Delhi,Stat,UPI,+91-98851-15238,Delhi
+173,29,35.00,5,01/09/2023,Rs.433,CUST_0545,Pen Set,085966,Good,ORD_0160,  Hyderabad,Stat,,919439079448,Telangana
+184,,850,17.0,02/06/2024,3400.00,CUST_0581,Laptop Bag,845523,5 stars,ORD_0171,,Acce,NET BANKING,+91 95012 21135,karnataka
+187,,85.00,17,"Nov 14, 2024",Rs.85,CUST_0467,Stapler,571759,5 stars,ORD_0173, Kolkata ,STATIONERY,WALLET,09950420400,West Bengal
+220,29,25,275,02/06/2023,-4212.50,,Sticky Notes,740495,Good,ORD_0204 ,  Jaipur,STATIONERY,net banking,9489136386,Rajasthan
+222,150,9800.0,-2,11-04-2023,0.00,CUST_???,Standing Desk,000000,Good,ORD_0206, Pune ,furniture,COD,96964 66232,M@h@r@shtr@
+227,,199.0,-4,31-Mar-2023,Rs.1393,CUST_0169,Phone Holder,823031 ,5 stars,ord_0211,JAIPUR,Acce,,9420645618,Rajasthan
+231,9,4500.00,10.0,"Oct 04, 2024",0.00,CUST_0280,Office Chair,428142 ,5 stars,ORD_0215 ,  Ahmedabad,FURNITURE,,95642 28178,Gujarat
+249,150,$199.00,397,02-Dec-2024,-994900.50,#REF!,Phone Holder,288708 ,6,ORD_0232,Jaipur,Acce,COD,9517913151,rajasthan
+254,26,199.0,19.0,25/10/2023,0.00,CUST_0169 ,Phone Holder  ,000000,5 stars,ORD_0237,,Acce, COD,+91-96823-15805,Delhi
+260,28,199..,16,24-Apr-2024,Rs.199,CUST_0284 ,Phone Holder,963528 ,6,ORD_0243,"Jaipur,",Accessories,cod,97162 67935,Rajasthan
+265,,650.0,-3,"Feb 15, 2024",6109389.00,CUST_0559,Desk Lamp  ,198243,6,ORD_0247,pune,Elec,COD,+91-96519-21098,Maharashtra
+277,30,75#,301,31/03/2023,324.00,CUST_0490,Screen Cleaner,000000,Good,ORD_0258,unknown,Accessories,upi,919639489974,Gujarat
+280,,2200.00,9999,06-Apr-2024,-9900.00,CUST_???,Bookshelf,441328,Good,ord_0261,,FURNITURE,Net Banking,919419938067,Tamil Nadu
+303,,8500.00,186,16/06/2024,6740.50,00351,Monitor,974866,Good,ORD_0284,chennai,ELECTRONICS,Net Banking,09984618931,tamil nadu
+326,,4500.00,9999,20-Feb-2024,"$67,500.00",CUST_0413,Office Chair,000000,6,ORD_0306 ,,  Furniture  ,,9412407431,rajasthan
+332,,Rs. 650.00,9999.0,1723487400,0.00,,Desk Lamp,247260,6,ORD_0312,"Ahmedabad,",Elec, COD,9512008232,gujarat
+350,7,85,9999,02/01/2024,$595.00,CUST_0189,Stapler,835899,Good,ORD_0329, Pune ,STATIONERY,wallet,9991967590,maharashtra
+364,1,650.00,0,13/10/2023,0.00,CUST_0369 ,Desk Lamp,35252,6,ORD_0343,Delhi,Electronics, Wallet,+91 93949 07529,Delhi
+369,20,25.00,19.0,03-11-2023,3333.50,#REF!,Sticky Notes,082256,5 stars,ORD_0348,"Delhi,",stationery,Debit Card,+91 91378 88088,delhi
+388,-5,"$1,800.00",9,19-04-2024,9000.00,CUST_0142,Webcam,369946 ,5 stars,ord_0365, Chennai ,Electronicss, Wallet,+91 97744 78874,tamil nadu
+396,3,Rs. 85.00,0,21-02-2023,892.50,CUST_0240,Stapler,660035,5 stars,ORD_0373,JAIPUR,STATIONERY,Credit Card,97153 12857,rajasthan
+420,,45.0,2.0,11/08/2023,$0.00,CUST_0424,Notebook,38490,Good,ORD_0396 , Mumbai ,STATIONERY,,+91 98507 96272,Maharashtra
+456,10%,450#,9,1724610600,9000.00,#REF!,Wireless Mouse,343041,6,ORD_0430 ,"Delhi,",electronics,COD,919482453993,Delhi
+463,27.0,9800.0,17.0,1725647400,-78400.00,CUST_0107,Standing Desk,989261,Good,ORD_0437,hyderabad,  Furniture  ,,09509944359,Telangana
+473,25,9800..,15,14/05/2024,133770.00,CUST_0375,Standing Desk,696323,Good,ORD_0446,"Ahmedabad,",Furn,net banking,+91-95939-11023,Guj@r@t
+506,0,450#,0,27-04-2024,0.00,#REF!,Wireless Mouse,828471 ,6,ord_0479,Hyderabad,  Electronics  , Debit Card,09349111648,Tel@ng@n@
+521,10%,9800..,-2,24-Dec-2023,-45766.00,CUST_0117,Standing Desk,097755,5 stars,ord_0494,  Pune,Furn,wallet,09519409043,  Maharashtra
+522,19,"$8,500.00",9999,2024-01-11,Rs.68000,CUST_,Monitor,424590 ,6,ORD_0495 , Bangalore ,  Electronics  ,,09648321055,Karnataka
+526,18,2200,16.0,17-06-2023,6464.04,CUST_,Bookshelf,633191 ,5 stars,ORD_0499,chennai,Furn,Credit Card,+91-99981-75758,tamil nadu
+533,,$85.00,267,"Jul 25, 2023","$13,476.75",00357,Stapler,43951,Good,ORD_0506,MUMBAI,  Stationery  , UPI,95935 10990,Maharashtra
+540,,850#,283,12/06/2024,-0.00,CUST_???,Laptop Bag,592582,6,ord_0513,,accessories,Net Banking,+91-90107-44571,Maharashtra
+542,,8500.0,16,2024-09-24,8826.40,,Monitor,946660,6,ORD_0515,unknown,Electronics,UPI,9541684954,Tamil Nadu
+549,,Rs. 899.00,4,"Aug 14, 2023",Rs.710,CUST_0171,USB Hub,337909,6,ORD_0522 ,"Hyderabad,",Electronicss,UPI,+91-90620-54023,Tel@ng@n@
+583,-5,2200.00,359,31-Jul-2024,Rs.2090,00321,Bookshelf,33728,6,ORD_0553,BANGALORE,FURNITURE,Credit Card,919745271078,  Karnataka
+599,-5,650..,11,"Dec 25, 2023","$8,326.50",CUST_,Desk Lamp,000000,6,ORD_0569,unknown,Electronics, Credit Card,09079911554,Tamil Nadu
+610,,750#,2.0,1683484200,615.00,CUST_0489,Keyboard,000000,5 stars,ORD_0579,unknown,ELECTRONICS,net banking,99459 08666,gujarat
+613,-5,199..,14,20-Apr-2024,-99.50,CUST_0425,Phone Holder,996662 ,6,ORD_0582,  Hyderabad,ACCESSORIES,,919441086607,Telangana
+620,10%,Rs. 899.00,13.0,"Aug 07, 2024",0.00,CUST_0568,USB Hub,037011,6,ORD_0588,"Delhi,",Electronicss,debit card,97166 98339,  Delhi
+636,3,Rs. 85.00,0,21-02-2023,892.50,CUST_0240,Stapler,660035,5 stars,ORD_0373,JAIPUR,STATIONERY,Credit Card,97153 12857,rajasthan
+649,,75#,8,26/05/2023,75.00,CUST_0196 ,Screen Cleaner - Imported,699129,5 stars,ORD_0614,,  Accessories  , UPI,9623998472,Delhi
+652,,9800#,20,17/03/2024,11564.00,#REF!,Standing Desk,887938,5 stars,ord_0617,Bangalore,Furnitures,Net Banking,919174442795,karnataka
+676,-5,$850.00,-3,"Aug 07, 2024",-892.50,CUST_0174,Laptop Bag  ,072358,Good,ORD_0640,Delhi,Accessories,,09624117801,Delhi
+677,3,$35.00,7,1678905000,0.00,CUST_,Pen Set,485814,5 stars,ord_0641, Surat ,Stationery,,99280 60172,Gujarat
+717,2,750,18,13-08-2023,7875712.35,,Keyboard,732133,6,ORD_0679,AHMEDABAD,ELECTRONICS,NET BANKING,919794746730,gujarat
+719,-5,899.0,442,27-Jun-2023,-449.50,00496,USB Hub,41675,Good,ord_0681,"Pune,",electronics,upi,9840006590,M@h@r@shtr@
+725,10%,850#,277,2024-10-28,0.00,CUST_0295 ,Laptop Bag (New),145697,5 stars,ORD_0687 ,unknown,ACCESSORIES,NET BANKING,919020263665,Telangana
+730,,85.00,9999.0,2023-09-19,-849915.00,CUST_0173,Stapler,14677,Good,ord_0692, Chennai ,Stationery,net banking,9057147655,tamil nadu
+731,1,85..,9999,03/08/2023,-200.60,CUST_0200,Stapler - Imported,000000,5 stars,ORD_0693,mumbai,STATIONERY,NET BANKING,9009203156,M@h@r@shtr@
+732,,650.00,12,"Aug 02, 2023",Rs.0,CUST_0439,Desk Lamp,731117 ,6,ORD_0694,CHENNAI,electronics,,09568837436,T@mil N@du
+752,,850.0,-1,"Dec 07, 2024","$11,444.40",CUST_0375 ,Laptop Bag,636547,6,ORD_0712, Bangalore ,  Accessories  ,,+91-93643-25579,  Karnataka
+762,150,45..,12,06-May-2024,-17820.00,CUST_0555,Notebook,429187 ,5 stars,ord_0721,"Bangalore,",Stat,,+91 92812 87843,  Karnataka
+780,,1200#,0,01/09/2023,-1260.00,CUST_0107,Laptop Stand,963935,6,ORD_0737,Ahmedabad,Elec,DEBIT CARD,09843733384,Guj@r@t
+789,150,899.0,20.0,21-03-2024,-449.50,CUST_???,USB Hub,865255,6,ORD_0745,"Delhi,",Electronicss,,+91-95309-27204,  Delhi
+792,10%,199..,-5,08/10/2024,-417.90,CUST_0123 ,Phone Holder  ,499665,6,ORD_0747,MUMBAI,Accessories,COD,9227403779,Maharashtra
+799,14,"$8,500.00",0,2023-03-21,-121125.00,CUST_???,Monitor,42055,Good,ORD_0753,,  Electronics  ,DEBIT CARD,90175 06327,  Delhi
+808,14,"$8,500.00",0,2023-03-21,-121125.00,CUST_???,Monitor,42055,Good,ORD_0753,,  Electronics  ,,90175 06327,  Delhi
+831,,1200#,97.0,12-05-2024,-708.00,CUST_0272,Laptop Stand,023878,Good,ORD_0782, Pune ,electronics,UPI,+91 92141 51412,M@h@r@shtr@
+847,13,25,256,"Jan 01, 2024",26.25,CUST_,Sticky Notes,093160,5 stars,ORD_0795,"Mumbai,",Stat,,90867 44285,maharashtra
+853,150,35.00,11.0,1689877800,0.00,CUST_,Pen Set,000000,5 stars,ORD_0801,  Surat,STATIONERY,Credit Card,+91 96583 20038,Guj@r@t
+855,10%,35..,0,2024-07-31,-17.50,CUST_???,Pen Set,176905,5 stars,ORD_0803,  Surat,Stationery,wallet,91746 90218,Guj@r@t
+886,,Rs. 85.00,12,09-07-2023,-1288.94,CUST_0235,Stapler,094015,Good,ORD_0830,,  Stationery  ,Wallet,9133581239,M@h@r@shtr@
+899,,1800.00,0,1680460200,0.00,CUST_???,Webcam,404840,Good,ORD_0842,Pune,Elec,,09739524689,Maharashtra
+909,10,"$1,800.00",-5,22-11-2023,640800.00,00334,Webcam,72035,Good,ORD_0852, Jaipur ,Electronicss,DEBIT CARD,09957823265,R@j@sth@n
+918,150,$85.00,3,2024-08-20,1604.80,00302,Stapler,977233,6,ORD_0861,  Mumbai,STATIONERY,Credit Card,+91-99105-81258,  Maharashtra
+919,14.7,Rs. 8500.00,-5,2023-02-17,33660.00,#REF!,Monitor,536341,5 stars,ORD_0862 ,unknown,Elec,debit card,919096170700,Maharashtra
+925,11,45.00,9999,"Feb 24, 2023",0.00,CUST_0117,Notebook,070722,6,ORD_0868 ,"Chennai,",Stat,,9238609766,T@mil N@du
+988,10%,1800#,9999,08/08/2024,16477.99,,Webcam,610162,5 stars,ord_0928,SURAT,  Electronics  ,,919885585887,Gujarat
+1019,10%,1800,-3,2023-11-04,4248.00,CUST_0456,Webcam,839383 ,5 stars,ORD_0958 ,Delhi,electronics,,9582113204,  Delhi
+1024,13,750.00,17,1674757800,-2280.00,CUST_,Keyboard,071240,Good,ORD_0963, Bangalore ,electronics, Wallet,9999270668,K@rn@t@k@
+1026,29,Rs. 120.00,9999,2023-02-21,604.80,,HDMI Cable,000000,6,ORD_0965,kolkata,electronics,,+91 90818 68351,West Beng@l
+1029,,9800#,135,2023-12-05,176400.00,,Standing Desk,015837,6,ORD_0967 ,Pune,furniture,WALLET,919154204403,  Maharashtra
+1032,,2200..,0,"Nov 15, 2024",$0.00,,Bookshelf,040356,6,ORD_0970, Chennai ,Furnitures,CREDIT CARD,9305549590,tamil nadu
+1034,29,85#,12,16/01/2023,395.25,CUST_0186,Stapler,054001,6,ord_0972,,STATIONERY,Wallet,+91 98681 89578,Maharashtra
+1041,6,120,-4,1734805800,120.00,00423,HDMI Cable,80228,6,ORD_0979,unknown,Elec,wallet,9306910567,  Maharashtra
+1058,6,"$4,500.00",11,1707244200,53094690.00,CUST_,Office Chair,357741,Good,ord_0995,HYDERABAD,FURNITURE,debit card,+91-97380-17848,Telangana
+1062,18,1200#,-5,22/09/2023,-2400.00,,Laptop Stand,477304,5 stars,ORD_0999,DELHI,Electronicss,UPI,91432 74204,Delhi

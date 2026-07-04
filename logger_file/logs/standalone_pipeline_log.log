@@ -1,0 +1,6 @@
+2026-07-04 19:38:44,851 | INFO | standalone_pipeline | No fresh CSV source documents found to clean.
+2026-07-04 19:42:33,182 | INFO | standalone_pipeline | Processing raw document stream: dirty_dataset.csv
+2026-07-04 19:42:33,214 | INFO | standalone_pipeline | Skipping dirty_dataset.csv: Either duplicate or empty.
+2026-07-04 19:45:16,887 | INFO | standalone_pipeline | Processing raw document stream: dirty_dataset.csv
+2026-07-04 19:45:18,508 | ERROR | standalone_pipeline | Parser execution phase crashed on file dirty_dataset.csv: 'discount'
+2026-07-04 19:47:46,901 | INFO | standalone_pipeline | Processing raw document stream: dirty_dataset.csv

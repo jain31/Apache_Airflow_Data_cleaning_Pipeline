@@ -1,0 +1,5 @@
+2026-07-04 19:47:47,325 | INFO | null | Starting null handling workflow for file: dirty_dataset.csv
+2026-07-04 19:47:47,341 | WARNING | null | action=quarantine_rows | col=payment_method | rows_quarantined=55 | null_pct=30.7% > 25% threshold | dest=C:\Desktop\Apache_Airflow_Data_cleaning_Pipeline\quarantine\null_quarantine\6348468f_null_2026-07-04_dirty_dataset.csv
+2026-07-04 19:47:47,362 | INFO | null | col=customer_id | strategy=mode | value=#REF! | imputed=20
+2026-07-04 19:47:47,374 | INFO | null | col=city | strategy=mode | value=UNKNOWN | imputed=12
+2026-07-04 19:47:47,379 | INFO | null | Null handling workflow finished successfully. Cleaned records remaining: 124

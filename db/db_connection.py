@@ -1,34 +1,28 @@
+"""
+db_connection.py
+Manages the SQLAlchemy engine pool connection configuration for MySQL.
+"""
+
 import os
-import logging
-from sqlalchemy import create_engine
-from sqlalchemy.exc import SQLAlchemyError
+from sqlalchemy import create_engine, text
 from logger_file.logger import get_logger
 
 log = get_logger("db_connection")
 
-# Fallback URI connection string (Updates dynamically via production environment variables)
-# Format: postgresql+psycopg2://user:password@host:port/dbname
-DEFAULT_DB_URI = os.getenv("AIRFLOW_VAR_DATABASE_URL", "postgresql+psycopg2://postgres:postgres@localhost:5432/medallion_db")
+# 1. Define the Global Connection String Variable
+DEFAULT_DB_URI = "mysql+pymysql://root:123456789@127.0.0.1:3306/medallion_db"
 
-def get_database_engine(connection_uri: str = DEFAULT_DB_URI):
-    """
-    Creates and returns a SQLAlchemy engine instance equipped with connection pooling.
-    Optimized for high-concurrency pipeline writes.
-    """
+def get_database_engine():
+    """Initializes and verifies the SQLAlchemy connection pool."""
+    log.info("Initializing database connection engine pool...")
+    engine = create_engine(DEFAULT_DB_URI)
+    
     try:
-        log.info("Initializing database connection engine pool...")
-        engine = create_engine(
-            connection_uri,
-            pool_size=10,          # Keeps up to 10 persistent connections open
-            max_overflow=20,       # Allows spikes up to 20 additional transient connections
-            pool_recycle=1800,     # Recycles connection blocks every 30 minutes to prevent stale locks
-            pool_pre_ping=True     # Validates liveness before issuing a query execution request
-        )
-        # Test connectivity immediately
-        with engine.connect() as conn:
-            conn.execute("SELECT 1")
-        log.info("Database connection pool established successfully.")
+        with engine.connect() as connection:
+            # Verified safe execution syntax under SQLAlchemy 2.0
+            connection.execute(text("SELECT 1")) 
+        log.info("Database connection engine pool verified successfully.")
         return engine
-    except SQLAlchemyError as e:
+    except Exception as e:
         log.critical(f"Failed to initialize database engine pool: {str(e)}")
         raise e

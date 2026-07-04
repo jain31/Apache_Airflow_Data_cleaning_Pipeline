@@ -1,0 +1,6 @@
+2026-07-04 19:38:36,045 - INFO - Product Name parser execution process initiated.
+2026-07-04 19:42:29,895 - INFO - Product Name parser execution process initiated.
+2026-07-04 19:45:13,369 - INFO - Product Name parser execution process initiated.
+2026-07-04 19:45:18,410 - INFO - status = success | total_rows = 677 | cleaned_rows = 677 | quarantine_rows = 0
+2026-07-04 19:47:43,483 - INFO - Product Name parser execution process initiated.
+2026-07-04 19:47:47,253 - INFO - status = success | total_rows = 677 | cleaned_rows = 677 | quarantine_rows = 0

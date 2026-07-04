@@ -1,0 +1,6 @@
+2026-07-04 19:38:36,030 - INFO - Pincode parser execution process initiated.
+2026-07-04 19:42:29,891 - INFO - Pincode parser execution process initiated.
+2026-07-04 19:45:13,364 - INFO - Pincode parser execution process initiated.
+2026-07-04 19:45:18,400 - WARNING - status = success | total_rows = 899 | cleaned_rows = 677 | quarantine_rows = 222 | quarantine_path = quarantine\quarantine_pincode\quarantine_pincode_04-07-26.csv
+2026-07-04 19:47:43,479 - INFO - Pincode parser execution process initiated.
+2026-07-04 19:47:47,244 - WARNING - status = success | total_rows = 899 | cleaned_rows = 677 | quarantine_rows = 222 | quarantine_path = quarantine\quarantine_pincode\quarantine_pincode_04-07-26.csv
