@@ -3,3 +3,17 @@
 2026-07-04 19:47:47,362 | INFO | null | col=customer_id | strategy=mode | value=#REF! | imputed=20
 2026-07-04 19:47:47,374 | INFO | null | col=city | strategy=mode | value=UNKNOWN | imputed=12
 2026-07-04 19:47:47,379 | INFO | null | Null handling workflow finished successfully. Cleaned records remaining: 124
+2026-07-05 11:15:57,962 | INFO | null | Starting null handling workflow for file: dirty_dataset.csv
+2026-07-05 11:15:57,978 | WARNING | null | action=quarantine_rows | col=payment_method | rows_quarantined=55 | null_pct=30.7% > 25% threshold | dest=C:\Desktop\Apache_Airflow_Data_cleaning_Pipeline\quarantine\null_quarantine\500b77d9_null_2026-07-05_dirty_dataset.csv
+2026-07-05 11:15:58,013 | INFO | null | col=customer_id | strategy=mode | value=#REF! | imputed=20
+2026-07-05 11:15:58,041 | INFO | null | col=city | strategy=mode | value=UNKNOWN | imputed=12
+2026-07-05 11:15:58,045 | INFO | null | Null handling workflow finished successfully. Cleaned records remaining: 124
+2026-07-05 11:39:51,053 | INFO | null | Starting null handling workflow for file: dirty_dataset.csv
+2026-07-05 11:39:51,060 | INFO | null | Null handling workflow finished successfully. Cleaned records remaining: 179
+2026-07-05 11:43:09,910 | INFO | null | Starting null handling workflow for file: dirty_dataset.csv
+2026-07-05 11:43:09,917 | INFO | null | Null handling workflow finished successfully. Cleaned records remaining: 179
+2026-07-05 11:50:40,420 | INFO | null | Starting null handling workflow for file: dirty_dataset.csv
+2026-07-05 11:50:40,430 | WARNING | null | action=quarantine_rows | col=payment_method | rows_quarantined=55 | null_pct=30.7% > 25% threshold | dest=C:\Desktop\Apache_Airflow_Data_cleaning_Pipeline\quarantine\null_quarantine\3ffa770f_null_2026-07-05_dirty_dataset.csv
+2026-07-05 11:50:40,444 | INFO | null | col=customer_id | strategy=mode | value=#REF! | imputed=20
+2026-07-05 11:50:40,455 | INFO | null | col=city | strategy=mode | value=UNKNOWN | imputed=12
+2026-07-05 11:50:40,458 | INFO | null | Null handling workflow finished successfully. Cleaned records remaining: 124

@@ -4,3 +4,11 @@
 2026-07-04 19:45:18,480 - WARNING - status = success | total_rows = 342 | cleaned_rows = 266 | quarantine_rows = 76 | quarantine_path = quarantine\quarantine_unit_price\quarantine_unit_price_04-07-26.csv
 2026-07-04 19:47:43,496 - INFO - Unit Price parser execution process initiated.
 2026-07-04 19:47:47,307 - WARNING - status = success | total_rows = 342 | cleaned_rows = 266 | quarantine_rows = 76 | quarantine_path = quarantine\quarantine_unit_price\quarantine_unit_price_04-07-26.csv
+2026-07-05 11:15:33,195 - INFO - Unit Price parser execution process initiated.
+2026-07-05 11:15:57,935 - WARNING - status = success | total_rows = 342 | cleaned_rows = 266 | quarantine_rows = 76 | quarantine_path = quarantine\quarantine_unit_price\quarantine_unit_price_05-07-26.csv
+2026-07-05 11:39:40,545 - INFO - Unit Price parser execution process initiated.
+2026-07-05 11:39:51,037 - WARNING - status = success | total_rows = 342 | cleaned_rows = 266 | quarantine_rows = 76 | quarantine_path = quarantine\quarantine_unit_price\quarantine_unit_price_05-07-26.csv
+2026-07-05 11:43:00,473 - INFO - Unit Price parser execution process initiated.
+2026-07-05 11:43:09,894 - WARNING - status = success | total_rows = 342 | cleaned_rows = 266 | quarantine_rows = 76 | quarantine_path = quarantine\quarantine_unit_price\quarantine_unit_price_05-07-26.csv
+2026-07-05 11:50:35,126 - INFO - Unit Price parser execution process initiated.
+2026-07-05 11:50:40,400 - WARNING - status = success | total_rows = 342 | cleaned_rows = 266 | quarantine_rows = 76 | quarantine_path = quarantine\quarantine_unit_price\quarantine_unit_price_05-07-26.csv

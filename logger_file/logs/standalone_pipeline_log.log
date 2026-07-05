@@ -4,3 +4,10 @@
 2026-07-04 19:45:16,887 | INFO | standalone_pipeline | Processing raw document stream: dirty_dataset.csv
 2026-07-04 19:45:18,508 | ERROR | standalone_pipeline | Parser execution phase crashed on file dirty_dataset.csv: 'discount'
 2026-07-04 19:47:46,901 | INFO | standalone_pipeline | Processing raw document stream: dirty_dataset.csv
+2026-07-05 11:15:56,885 | INFO | standalone_pipeline | Processing raw document stream: dirty_dataset.csv
+2026-07-05 11:39:50,241 | INFO | standalone_pipeline | Processing raw document stream: dirty_dataset.csv
+2026-07-05 11:43:09,047 | INFO | standalone_pipeline | Processing raw document stream: dirty_dataset.csv
+2026-07-05 11:50:39,759 | INFO | standalone_pipeline | Processing raw document stream: dirty_dataset.csv
+2026-07-05 11:50:40,541 | INFO | standalone_pipeline | Computing analytical Gold Layer views...
+2026-07-05 11:50:40,641 | INFO | standalone_pipeline | Gold analytical transformation summaries compiled successfully.
+2026-07-05 11:50:40,642 | INFO | standalone_pipeline | Pipeline finished completely for: dirty_dataset.csv

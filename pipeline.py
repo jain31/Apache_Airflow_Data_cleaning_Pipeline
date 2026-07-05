@@ -34,28 +34,31 @@ from db.db_writes import load_dataframe_to_table
 log = get_logger("standalone_pipeline")
 
 # Define target columns and headers expected by the parser
+# FIX: Aligned perfectly to match ingestion mappings exactly
 COLUMN_ALIAS = {
-    "order_id": ["order id", "ord_id"],
+    "order_id": ["order id", "ord_id", "order_no"],
     "customer_id": ["customer id", "cust_id"],
-    "order_date": ["date", "order_date"],
-    "product_name": ["product", "item_name"],
+    "order_date": ["date", "order_date", "order date"],
+    "product_name": ["product", "item_name", "product name"],
     "category": ["category", "type"],
-    "quantity": ["qty", "count"],
-    "unit_price": ["price", "rate"],
-    "total_amount": ["total", "amount"],
-    "payment_method": ["payment", "method"],
+    "quantity": ["qty", "count", "quantity"],
+    "unit_price": ["price", "rate", "unit_price", "unit price"],
+    "total_amount": ["total", "amount", "total_amount", "total amount"],
+    "payment_method": ["payment", "method", "payment method"],
     "city": ["city", "location"],
     "state": ["state", "region"],
-    "phone": ["phone_number", "telephone"],
-    "pincode": ["zip", "zipcode"],
-    "rating": ["stars", "score"],
+    "phone": ["phone_number", "telephone", "phone"],
+    "pincode": ["zip", "zipcode", "pincode"],
+    "rating": ["stars", "score", "rating"],
     "discount": ["discount", "discount_pct", "disc", "discount_percentage"]
 }
 
 def run_gold_aggregations(engine):
     """Executes Gold Layer business aggregations directly inside MySQL."""
     log.info("Computing analytical Gold Layer views...")
-    
+
+
+
     fact_sales_sql = """
         INSERT INTO analytical_gold.fact_sales_performance 
             (order_id, order_date, customer_id, category, net_revenue, units_sold, customer_rating)
@@ -129,13 +132,22 @@ def execute_pipeline():
             work_df, _ = clean_unit_price(work_df, original_df)
             work_df, _ = clean_rating(work_df, original_df)
             
-            # Simple categorical strings
-            work_df["order_id"] = work_df["order_id"].fillna(pd.NA).str.strip().str.upper()
-            work_df["customer_id"] = work_df["customer_id"].fillna(pd.NA).str.strip().str.upper()
-            work_df["city"] = work_df["city"].fillna(pd.NA).str.strip().str.upper()
-            work_df["category"] = work_df["category"].fillna(pd.NA).str.strip().str.title()
-            work_df["payment_method"] = work_df["payment_method"].fillna(pd.NA).str.strip().str.upper()
+            # FIX: Added defensive existence check for 'discount' column before transforming string fields
+            if "discount" not in work_df.columns:
+                # If a parser dropped or isolated it, check original copy or initialize gracefully
+                if "discount" in original_df.columns:
+                    work_df["discount"] = original_df["discount"]
+                else:
+                    work_df["discount"] = 0.0
+
+            # Simple categorical strings transformation loops
+            work_df["order_id"] = work_df["order_id"].fillna(pd.NA).astype(str).str.strip().str.upper()
+            work_df["customer_id"] = work_df["customer_id"].fillna(pd.NA).astype(str).str.strip().str.upper()
+            work_df["city"] = work_df["city"].fillna(pd.NA).astype(str).str.strip().str.upper()
+            work_df["category"] = work_df["category"].fillna(pd.NA).astype(str).str.strip().str.title()
+            work_df["payment_method"] = work_df["payment_method"].fillna(pd.NA).astype(str).str.strip().str.upper()
             work_df["discount"] = pd.to_numeric(work_df["discount"], errors="coerce").fillna(0.0)
+            
         except Exception as e:
             log.error(f"Parser execution phase crashed on file {file_path.name}: {str(e)}")
             continue
@@ -147,12 +159,15 @@ def execute_pipeline():
         
         clean_df, _, _ = handle_nulls(work_df, file_path.name, date_cols, continuous_cols, categorical_cols)
 
-        # Ensure correct datatypes before writing to DB
-        clean_df["quantity"] = clean_df["quantity"].astype(int)
-        clean_df["unit_price"] = clean_df["unit_price"].astype(float)
-        clean_df["discount"] = clean_df["discount"].astype(float)
-        clean_df["total_amount"] = clean_df["total_amount"].astype(float)
-        clean_df["rating"] = clean_df["rating"].astype(float)
+        # Ensure correct datatypes safely before database writing pipelines
+        clean_df["quantity"] = pd.to_numeric(clean_df["quantity"], errors="coerce").fillna(1).astype(int)
+        clean_df["unit_price"] = pd.to_numeric(clean_df["unit_price"], errors="coerce").fillna(0.0).astype(float)
+        clean_df["total_amount"] = pd.to_numeric(clean_df["total_amount"], errors="coerce").fillna(0.0).astype(float)
+        clean_df["rating"] = pd.to_numeric(clean_df["rating"], errors="coerce").fillna(0.0).astype(float)
+
+        # FIX: Normalize whole percentage numbers (e.g., 15.0 -> 0.15) to match MySQL DECIMAL range constraints
+        clean_df["discount"] = pd.to_numeric(clean_df["discount"], errors="coerce").fillna(0.0).astype(float)
+        clean_df.loc[clean_df["discount"] > 1.0, "discount"] = clean_df["discount"] / 100.0
 
         # 5. Write Pristine Records into Silver MySQL Database Layer
         success = load_dataframe_to_table(clean_df, "orders", engine, schema="clean_silver", if_exists="append")

@@ -1,13 +1,29 @@
 import pandas as pd
 from sqlalchemy import Engine
 from sqlalchemy.exc import SQLAlchemyError
+from sqlalchemy.dialects.mysql import insert
 from logger_file.logger import get_logger
 
 log = get_logger("db_writer")
 
+def _insert_ignore_method(table, conn, keys, data_iter):
+    """
+    Custom insertion callable for pandas.to_sql to execute MySQL 'INSERT IGNORE'
+    structures for high-speed bulk ingestion while bypassing primary key collisions.
+    """
+    # Create the base insert mapping structure using SQLAlchemy's Core layout
+    data = [dict(zip(keys, row)) for row in data_iter]
+    
+    # Construct a MySQL-specific INSERT statement prefixed with IGNORE
+    stmt = insert(table.table).values(data).prefix_with("IGNORE")
+    
+    # Execute statement on the current active connection context
+    conn.execute(stmt)
+
 def load_dataframe_to_table(df: pd.DataFrame, table_name: str, engine: Engine, schema: str = "public", if_exists: str = "append") -> bool:
     """
     Streams a Pandas DataFrame straight into a target relational database table.
+    Bypasses duplicate primary keys gracefully using INSERT IGNORE.
     
     Parameters:
         df (pd.DataFrame): Cleaned records to write.
@@ -24,7 +40,7 @@ def load_dataframe_to_table(df: pd.DataFrame, table_name: str, engine: Engine, s
         return True
 
     total_rows = len(df)
-    log.info(f"Initiating bulk write of {total_rows} records into target table '{schema}.{table_name}'...")
+    log.info(f"Initiating bulk write of {total_rows} records into target table '{schema}.{table_name}' using INSERT IGNORE...")
 
     try:
         # Use context manager connection block to guarantee resource teardown
@@ -35,10 +51,10 @@ def load_dataframe_to_table(df: pd.DataFrame, table_name: str, engine: Engine, s
                 schema=schema,
                 if_exists=if_exists,
                 index=False,
-                chunksize=10000,        # Batches insertions into sets of 10k rows to avoid memory bloat
-                method="multi"         # Converts insert statements into high-speed multi-row structures
+                chunksize=10000,              # Batches insertions into sets of 10k rows to avoid memory bloat
+                method=_insert_ignore_method   # Uses custom compiler logic to handle duplicates without throwing exceptions
             )
-        log.info(f"Successfully loaded data. status=success | table={schema}.{table_name} | rows_inserted={total_rows}")
+        log.info(f"Successfully executed load routine. status=completed | table={schema}.{table_name} | processing_attempted={total_rows}")
         return True
         
     except SQLAlchemyError as e:

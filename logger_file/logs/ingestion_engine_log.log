@@ -10,3 +10,19 @@
 2026-07-04 19:47:46,902 | INFO | ingestion_engine | --- Launching Ingestion Lifecycle Loop for file: dirty_dataset.csv ---
 2026-07-04 19:47:46,933 | WARNING | ingestion_engine | Extra columns detected: ['status']. Truncating dataset down to expected core layout schema.
 2026-07-04 19:47:47,144 | INFO | ingestion_engine | Successfully archived raw dump records to raw_bronze.orders_landing for file: dirty_dataset.csv
+2026-07-05 11:15:56,883 | INFO | ingestion_engine | action=discover_files | files_found=1
+2026-07-05 11:15:56,886 | INFO | ingestion_engine | --- Launching Ingestion Lifecycle Loop for file: dirty_dataset.csv ---
+2026-07-05 11:15:57,122 | WARNING | ingestion_engine | Extra columns detected: ['status']. Truncating dataset down to expected core layout schema.
+2026-07-05 11:15:57,673 | INFO | ingestion_engine | Successfully archived raw dump records to raw_bronze.orders_landing for file: dirty_dataset.csv
+2026-07-05 11:39:50,238 | INFO | ingestion_engine | action=discover_files | files_found=1
+2026-07-05 11:39:50,243 | INFO | ingestion_engine | --- Launching Ingestion Lifecycle Loop for file: dirty_dataset.csv ---
+2026-07-05 11:39:50,369 | WARNING | ingestion_engine | Extra columns detected: ['status']. Truncating dataset down to expected core layout schema.
+2026-07-05 11:39:50,792 | INFO | ingestion_engine | Successfully archived raw dump records to raw_bronze.orders_landing for file: dirty_dataset.csv
+2026-07-05 11:43:09,046 | INFO | ingestion_engine | action=discover_files | files_found=1
+2026-07-05 11:43:09,048 | INFO | ingestion_engine | --- Launching Ingestion Lifecycle Loop for file: dirty_dataset.csv ---
+2026-07-05 11:43:09,228 | WARNING | ingestion_engine | Extra columns detected: ['status']. Truncating dataset down to expected core layout schema.
+2026-07-05 11:43:09,625 | INFO | ingestion_engine | Successfully archived raw dump records to raw_bronze.orders_landing for file: dirty_dataset.csv
+2026-07-05 11:50:39,758 | INFO | ingestion_engine | action=discover_files | files_found=1
+2026-07-05 11:50:39,760 | INFO | ingestion_engine | --- Launching Ingestion Lifecycle Loop for file: dirty_dataset.csv ---
+2026-07-05 11:50:39,805 | WARNING | ingestion_engine | Extra columns detected: ['status']. Truncating dataset down to expected core layout schema.
+2026-07-05 11:50:40,212 | INFO | ingestion_engine | Successfully archived raw dump records to raw_bronze.orders_landing for file: dirty_dataset.csv
